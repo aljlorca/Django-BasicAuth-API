@@ -2,7 +2,7 @@ import base64
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.models import User
 
-
+## Function to autenticate via HTTP_AUTHORIZATION protocole
 def request_auth(request):
         try:
             auth = request.META.get('HTTP_AUTHORIZATION')

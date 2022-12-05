@@ -4,8 +4,9 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from django.http.response import JsonResponse
 from .basic_auth import request_auth
-# Create your views here.
 
+
+#Creation of the view 
 class Test(View):
     @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):

@@ -1,3 +1,9 @@
+"""
+
+This script test the API, it returns the user created in SQLite
+
+"""
+
 import requests
 from requests.auth import HTTPBasicAuth
 
